@@ -1,0 +1,17 @@
+{
+    "require": {
+		"mikecao/flight": "^1.3",
+        "goldman40/php-rcon-minecraft": "dev-master"
+    },
+    "autoload": {
+		"psr-4": {
+			"Controllers\\": "controllers/",
+			"Models\\": "models/"
+		},
+		"files": [
+            "config/products.php",
+			"config/settings.php",
+			"routes/routes.php"
+		]
+    }
+}
