@@ -24,13 +24,6 @@
                     </div>
                 </div>
             <? endforeach ?>
-<!--                <div class="col-md-12">-->
-<!--                    <div class="uk-margin-small-top">-->
-<!--                        <blockquote cite="#" class="uk-margin-remove">-->
-<!--                            <p class="blockquote-products">* При неверно введенном нике средства не возвращаются и валюта не начисляется. Будьте осторожны!</p>-->
-<!--                        </blockquote>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
         </div>
 
