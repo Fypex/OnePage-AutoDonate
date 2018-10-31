@@ -1,30 +1,17 @@
-
-$('#id-нажатой кнопки').click(function() {
-    var data = $('#id-формы').serializeArray();
+function buyProduct(obj) {
+    var data = $('#buy-product-'+obj.id).serializeArray();
     $.ajax({
         url: '/order',
         type: 'POST',
         dataType : 'JSON',
         data: data,
         success: function(data) {
-
+            if(data.status == 'error')
+            {
+                UIkit.notification(data.message, {status: 'danger',pos: 'top-right'})
+            }else{
+                window.open(data.message,'_blank');
+            }
         }
     });
-});
-
-function buyProduct(obj) {
-
-    $.ajax({
-        url: '/order/'+obj.id,
-        type: 'POST',
-        dataType : 'JSON',
-        success: function(data) {
-
-        }
-    });
-
 }
-
-// $('#menu').click(function () {
-//    $('.uk-navbar-nav').css("display","block");
-// });
