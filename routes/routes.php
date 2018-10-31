@@ -11,6 +11,7 @@ Flight::route('/', function(){
       'server_ip' => settings()['server']['ip'],
       'links' => settings()['links'],
       'widget' => settings()['widget'],
+      'contacts' => settings()['contacts'],
       'prodcuts' => products(),
   ));
 });
