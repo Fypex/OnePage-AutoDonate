@@ -57,6 +57,10 @@ body{
 .mobile-menu{
 	display: none;
 }
+.uk-notification-message {
+	background: #666666;
+	color: white;
+}
 @media screen and (max-width: 767px ){
 	.title-product {
 		display: inline-block;
