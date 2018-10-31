@@ -57,11 +57,11 @@
         <div class="uk-modal-dialog uk-modal-body">
             <h2 class="uk-modal-title">Контакты</h2>
                 <div class="container uk-text-center">
-                    <p class="uk-text-bold uk-display-inline">Контактная почта: </p><span></span>
+                    <p class="uk-text-bold uk-display-inline">Контактная почта: </p><span><?= $contacts['mail'] ?></span>
                     <br>
-                    <p class="uk-text-bold uk-display-inline">Администратор: </p><span></span>
+                    <p class="uk-text-bold uk-display-inline">Администратор: </p><span><a target="_black" href="<?= $contacts['admin'] ?>"><?= $contacts['admin'] ?></a></span>
                     <br>
-                    <p class="uk-text-bold uk-display-inline">Группа сервера: </p><span></span>
+                    <p class="uk-text-bold uk-display-inline">Группа сервера: </p><span><a target="_blank" href="<?= $contacts['group-server'] ?>"><?= $contacts['group-server'] ?></a></span>
                 </div>
             <p class="uk-text-right">
                 <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
