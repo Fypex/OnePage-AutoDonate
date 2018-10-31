@@ -1,5 +1,5 @@
 <?php 
-
+use Controllers\BuyProductsController as BuyProduct;
 Flight::route('/', function(){
 	Flight::render('index', array(
 	    'title' => settings()['site']['title'],
@@ -10,4 +10,8 @@ Flight::route('/', function(){
       'widget' => settings()['widget'],
       'prodcuts' => products(),
   ));
+});
+
+Flight::route('POST /order', function(){
+    BuyProduct::order($_POST['name'],$_POST['id']);
 });
