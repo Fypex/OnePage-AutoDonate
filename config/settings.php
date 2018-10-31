@@ -31,6 +31,11 @@ function settings()
         ],
         'widget' => [
             'id' => '20003922',
+        ],
+        'contacts' => [
+            'mail' => '',
+            'admin' => '',
+            'group-server' => ''
         ]
     ];
 }
