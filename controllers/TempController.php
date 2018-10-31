@@ -32,4 +32,10 @@ class TempController
        $data = file(self::$folder.$file.self::$expansion);
        return $data[0];
     }
+
+    public static function delFile($file)
+    {
+        $data = file(self::$folder.$file.self::$expansion);
+        unlink($data);
+    }
 }
