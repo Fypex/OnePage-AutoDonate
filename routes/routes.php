@@ -1,5 +1,8 @@
 <?php 
 use Controllers\BuyProductsController as BuyProduct;
+use Controllers\PayFreeKassaController as PayFreeKassa;
+
+
 Flight::route('/', function(){
 	Flight::render('index', array(
 	    'title' => settings()['site']['title'],
@@ -14,4 +17,8 @@ Flight::route('/', function(){
 
 Flight::route('POST /order', function(){
     BuyProduct::order($_POST['name'],$_POST['id']);
+});
+
+Flight::route('POST /pay/success', function(){
+    PayFreeKassa::pay($_POST);
 });
