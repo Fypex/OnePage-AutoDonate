@@ -29,8 +29,9 @@ function settings()
             'vk' => 'https://vk.com/group',
             'support' => 'https://vk.com/support'
         ],
+        // Vk виджет
         'widget' => [
-            'id' => '20003922',
+            'id' => '20003922', // id Группы
         ],
         'contacts' => [
             'mail' => '',
