@@ -14,7 +14,8 @@
                                     <p class="uk-margin-remove price-product"><?= $product['price']?>руб</p>
                                 </div>
                                 <div class="col-md-12">
-                                    <input class="uk-input" type="text" placeholder="Ваш ник">
+                                    <input type="hidden" value="<?= $product['id']?>" name="id">
+                                    <input class="uk-input" type="text" placeholder="Ваш ник" name="name">
                                 </div>
                                 <div class="col-md-12 uk-margin-small-top">
                                     <a id="<?= $product['id']?>" class="uk-button uk-button-default uk-width-2-2" onclick="buyProduct(this)">Купить</a>
