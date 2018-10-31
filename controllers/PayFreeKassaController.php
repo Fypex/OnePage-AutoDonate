@@ -31,11 +31,11 @@ class PayFreeKassaController
             $file = $data['MERCHANT_ORDER_ID'];
 
             $string = json_decode(Temp::openContent($file),true);
-            $command = 'pex user '.$string['user'].' group set'.$string['privilage'];
+            $command = 'pex user '.$string['user'].' group set '.$string['privilage'];
 
             Rcon::command($command);
 
-            Temp::delFile($file);
+            die('yes');
         }
         //Так же, рекомендуется добавить проверку на сумму платежа и не была ли эта заявка уже оплачена или отменена
         //Оплата прошла успешно, можно проводить операцию.
