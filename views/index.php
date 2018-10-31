@@ -7,7 +7,7 @@
             <? foreach ($prodcuts as $product): ?>
                 <div class="col-md-4">
                     <div class="uk-card uk-card-default uk-card-body card-products uk-margin-small-top">
-                        <form id="buy-product" method="post">
+                        <form id="buy-product-<?= $product['id']?>" method="post">
                             <div class="row">
                                 <div class="col-md-12 uk-text-left title-product-wrapper">
                                     <p class="uk-margin-remove title-product"><?= $product['name']?></p>
