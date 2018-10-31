@@ -1,17 +1,14 @@
-````# OnePage AutoDonate
+# OnePage AutoDonate
 ---
-
 # Installation!
 
-
-
-# Archive
+### Archive
 ```sh
   - Download archive
   - Unzip to the right place
 ```
 ---
-# Git!
+### Git!
 ```sh
 git clone https://github.com/Fypex/OnePage-AutoDonate.git
 ```
