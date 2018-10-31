@@ -57,3 +57,9 @@ composer install
     'widget' => [
         'id' => '20003922',
     ]
+    <Links in menu contacts>
+    'contacts' => [
+        'mail' => '',
+        'admin' => '',
+        'group-server' => ''
+    ]
