@@ -11,6 +11,7 @@
 ### Git!
 ```sh
 git clone https://github.com/Fypex/OnePage-AutoDonate.git
+composer install
 ```
 
 # Settings
