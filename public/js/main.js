@@ -15,3 +15,5 @@ function buyProduct(obj) {
         }
     });
 }
+
+UIkit.modal('#modal-rules');
