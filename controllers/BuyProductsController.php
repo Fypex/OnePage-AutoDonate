@@ -11,7 +11,7 @@ class BuyProductsController
     public static function order($name,$id_privilege)
     {
         $product = products()[$id_privilege];
-        $kassa = settings();
+        $kassa = settings()['freekassa'];
         $id = uniqid();
         self::isEmpty($name,$id_privilege);
 
