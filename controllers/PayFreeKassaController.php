@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Controllers\TempController as Temp;
+use Controllers\RconController as Rcon;
 
 class PayFreeKassaController
 {
@@ -28,6 +29,11 @@ class PayFreeKassaController
         }else{
 
             $file = $data['MERCHANT_ORDER_ID'];
+
+            $string = json_decode(Temp::openContent($file),true);
+            $command = 'pex user '.$string['user'].' group set'.$string['privilage'];
+
+            Rcon::command($command);
 
         }
         //Так же, рекомендуется добавить проверку на сумму платежа и не была ли эта заявка уже оплачена или отменена
