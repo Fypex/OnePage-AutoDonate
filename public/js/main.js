@@ -10,7 +10,7 @@ function buyProduct(obj) {
             {
                 UIkit.notification(data.message, {status: 'danger',pos: 'top-right'})
             }else{
-                window.open(data.message,'_blank');
+                window.location.replace(data.message);
             }
         }
     });
