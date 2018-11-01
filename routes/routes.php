@@ -23,3 +23,10 @@ Flight::route('POST /order', function(){
 Flight::route('POST /pay/success', function(){
     PayFreeKassa::pay($_POST);
 });
+
+Flight::route('/success', function(){
+    Flight::render('success');
+});
+Flight::route('/error', function(){
+    Flight::render('error');
+});
