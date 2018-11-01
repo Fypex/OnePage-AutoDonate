@@ -9,8 +9,8 @@
 	<link rel="icon" type="image/png" href="/assets/img/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css">
 
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css">-->
-    <link rel="stylesheet" href="/css/uikit.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css">
+
 
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&subset=cyrillic">
