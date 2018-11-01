@@ -5,7 +5,7 @@ function settings()
 {
     return [
         'site' => [  // Настройки сайта
-            'title' => 'GameClub',
+            'title' => 'LightDev',
             'keywords' => '',
             'description' => ''
         ],
@@ -26,7 +26,7 @@ function settings()
         ],
 
         'links' => [
-            'vk' => 'https://vk.com/group',
+            'vk' => 'https://vk.com/idmaksik69',
             'support' => 'https://vk.com/support'
         ],
         // Vk виджет
