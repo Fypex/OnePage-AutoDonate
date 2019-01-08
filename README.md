@@ -1,6 +1,6 @@
 ### Demo
 ```sh
-  - donate.lightdev.ru
+  [a link](https://github.com/user/repo/blob/branch/other_file.md)
 ```
 # OnePage AutoDonate
 ---
