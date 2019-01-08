@@ -1,7 +1,7 @@
 ### Demo
-```sh
-  [a link](https://github.com/user/repo/blob/branch/other_file.md)
-```
+
+  [a link](http://donate.lightdev.ru/)
+  
 # OnePage AutoDonate
 ---
 # Installation!
