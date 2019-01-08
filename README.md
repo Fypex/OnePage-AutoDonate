@@ -1,3 +1,7 @@
+### Demo
+```sh
+  - donate.lightdev.ru
+```
 # OnePage AutoDonate
 ---
 # Installation!
