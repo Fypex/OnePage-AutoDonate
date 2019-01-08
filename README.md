@@ -1,6 +1,5 @@
 ### Demo
-
-  [a link](http://donate.lightdev.ru/)
+  [demo](http://donate.lightdev.ru/)
   
 # OnePage AutoDonate
 ---
