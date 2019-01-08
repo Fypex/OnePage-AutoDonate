@@ -1,5 +1,5 @@
 ### Demo
-  [demo](http://donate.lightdev.ru/)
+  [http://donate.lightdev.ru/](http://donate.lightdev.ru/)
   
 # OnePage AutoDonate
 ---
