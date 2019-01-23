@@ -7,48 +7,42 @@ use Flight;
 
 class BuyProductsController
 {
-
-    public static function order($name,$id_privilege)
+    public static function order($name, $id_privilege)
     {
         $product = products()[$id_privilege];
         $kassa = settings()['freekassa'];
         $id = uniqid();
-        self::isEmpty($name,$id_privilege);
+        self::isEmpty($name, $id_privilege);
 
-        new Temp($id,[
-            'id' => $id,
-            'user' => $name,
+        new Temp($id, [
+            'id'        => $id,
+            'user'      => $name,
             'privilage' => $product['pex'],
-            'price' => $product['price']
+            'price'     => $product['price'],
         ]);
 
-
-        $hash = md5($kassa['shop_id'].":".$product['price'].":".$kassa['key'].":".$id);
+        $hash = md5($kassa['shop_id'].':'.$product['price'].':'.$kassa['key'].':'.$id);
         Flight::json([
-            'status' => 'success',
-            'message' => 'http://www.free-kassa.ru/merchant/cash.php?m='.$kassa['shop_id'].'&oa='.$product['price'].'&s='.$hash.'&o='.$id
+            'status'  => 'success',
+            'message' => 'http://www.free-kassa.ru/merchant/cash.php?m='.$kassa['shop_id'].'&oa='.$product['price'].'&s='.$hash.'&o='.$id,
         ]);
-
     }
 
-    private static function isEmpty($name,$id_privilege)
+    private static function isEmpty($name, $id_privilege)
     {
-        if (empty($name))
-        {
+        if (empty($name)) {
             Flight::json([
-                'status' => 'error',
+                'status'  => 'error',
                 'message' => 'Введите свой ник',
             ]);
             exit();
         }
-        if (empty($id_privilege))
-        {
+        if (empty($id_privilege)) {
             Flight::json([
-                'status' => 'error',
+                'status'  => 'error',
                 'message' => 'Такой привилегии нету',
             ]);
             exit();
         }
     }
-
 }

@@ -6,7 +6,6 @@ use thedudeguy\Rcon;
 
 class RconController
 {
-
     public static function command($command)
     {
         $settings = settings()['rcon'];
@@ -16,11 +15,9 @@ class RconController
         $password = $settings['password'];
         $timeout = 3;
 
-
         $rcon = new Rcon($host, $port, $password, $timeout);
 
-        if ($rcon->connect())
-        {
+        if ($rcon->connect()) {
             $rcon->send_command($command);
         }
     }
