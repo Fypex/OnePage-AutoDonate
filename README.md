@@ -9,7 +9,7 @@
 ```sh
   - Download archive
   - Unzip to the right place
-  - [http://files.ztgamers.com.ua/?dl=c6a7f53ed197a206b38b0e42476fd5bb](Download)
+  - [Download](http://files.ztgamers.com.ua/?dl=c6a7f53ed197a206b38b0e42476fd5bb)
 ```
 ---
 ### Git!
