@@ -6,11 +6,11 @@
 # Installation!
 
 ### Archive
+[Download](http://files.ztgamers.com.ua/?dl=c6a7f53ed197a206b38b0e42476fd5bb)
 ```sh
   - Download archive
   - Unzip to the right place
 ```
-  [Download](http://files.ztgamers.com.ua/?dl=c6a7f53ed197a206b38b0e42476fd5bb)
 ---
 ### Git!
 ```sh
