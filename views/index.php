@@ -7,18 +7,18 @@
             <? foreach ($prodcuts as $product): ?>
                 <div class="col-md-4">
                     <div class="uk-card uk-card-default uk-card-body card-products uk-margin-small-top">
-                        <form id="buy-product-<?= $product['id']?>" method="post">
+                        <form id="buy-product-<?php echo $product['id']?>" method="post">
                             <div class="row">
                                 <div class="col-md-12 uk-text-left title-product-wrapper">
-                                    <p class="uk-margin-remove title-product"><?= $product['name']?></p>
-                                    <p class="uk-margin-remove price-product"><?= $product['price']?>руб</p>
+                                    <p class="uk-margin-remove title-product"><?php echo $product['name']?></p>
+                                    <p class="uk-margin-remove price-product"><?php echo $product['price']?>руб</p>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="hidden" value="<?= $product['id']?>" name="id">
+                                    <input type="hidden" value="<?php echo $product['id']?>" name="id">
                                     <input class="uk-input" type="text" placeholder="Ваш ник" name="name">
                                 </div>
                                 <div class="col-md-12 uk-margin-small-top">
-                                    <a id="<?= $product['id']?>" class="uk-button uk-button-default uk-width-2-2" onclick="buyProduct(this)">Купить</a>
+                                    <a id="<?php echo $product['id']?>" class="uk-button uk-button-default uk-width-2-2" onclick="buyProduct(this)">Купить</a>
                                 </div>
                             </div>
                         </form>
@@ -34,7 +34,7 @@
             <!-- VK Widget -->
             <div id="vk_groups"></div>
             <script type="text/javascript">
-                VK.Widgets.Group("vk_groups", {mode: 4,width: 'auto',height: '350px'}, <?= $widget['id'] ?>);
+                VK.Widgets.Group("vk_groups", {mode: 4,width: 'auto',height: '350px'}, <?php echo $widget['id'] ?>);
             </script>
         </div>
     </div>
