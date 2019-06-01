@@ -12,7 +12,7 @@ Flight::route('/', function(){
       'links' => settings()['links'],
       'widget' => settings()['widget'],
       'contacts' => settings()['contacts'],
-      'prodcuts' => products(),
+      'products' => products(),
   ));
 });
 

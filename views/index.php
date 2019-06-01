@@ -4,7 +4,7 @@
         <div class="uk-card uk-card-default uk-card-body main-card">
             <h2 class="uk-text-left uk-inline-clip">Привилегии</h2>
             <div class="row">
-            <? foreach ($prodcuts as $product): ?>
+            <?php foreach ($products as $product): ?>
                 <div class="col-md-4">
                     <div class="uk-card uk-card-default uk-card-body card-products uk-margin-small-top">
                         <form id="buy-product-<?php echo $product['id']?>" method="post">
@@ -24,7 +24,7 @@
                         </form>
                     </div>
                 </div>
-            <? endforeach ?>
+            <?php endforeach ?>
             </div>
         </div>
 
