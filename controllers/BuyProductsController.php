@@ -18,8 +18,9 @@ class BuyProductsController
         new Temp($id,[
             'id' => $id,
             'user' => $name,
-            'privilage' => $product['pex'],
-            'price' => $product['price']
+            'command' => str_replace('[nick]', $name, $product['command']),
+            'price' => $product['price'],
+            'time' => date('d/m/Y H:i:s',time())
         ]);
 
 

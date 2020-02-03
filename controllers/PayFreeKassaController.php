@@ -11,6 +11,7 @@ class PayFreeKassaController
 
     public static function pay($data)
     {
+
         $kassa = settings();
         $merchant_id = $kassa['freekassa']['shop_id'];
         $merchant_secret = $kassa['freekassa']['key'];
@@ -31,9 +32,8 @@ class PayFreeKassaController
             $file = $data['MERCHANT_ORDER_ID'];
 
             $string = json_decode(Temp::openContent($file),true);
-            $command = 'pex user '.$string['user'].' group set '.$string['privilage'];
 
-            Rcon::command($command);
+            Rcon::command($string['command']);
 
             die('yes');
         }
