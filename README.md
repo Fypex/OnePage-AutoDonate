@@ -1,17 +1,10 @@
 ### Demo
-  [http://donate.lightdev.ru/](http://donate.lightdev.ru/)
+  [http://autodonate.ussmix.com/](http://autodonate.ussmix.com/)
   
 # OnePage AutoDonate
 ---
 # Installation!
 
-### Archive
-[Download](http://files.ztgamers.com.ua/?dl=c6a7f53ed197a206b38b0e42476fd5bb)
-```sh
-  - Download archive
-  - Unzip to the right place
-```
----
 ### Git!
 ```sh
 git clone https://github.com/Fypex/OnePage-AutoDonate.git
