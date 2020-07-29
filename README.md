@@ -56,8 +56,10 @@ forward requests to the public folder
         'id' => '20003922',
     ]
     <Links in menu contacts>
+    <Links in menu contacts>
     'contacts' => [
         'mail' => '',
         'admin' => '',
         'group-server' => ''
     ]
+    
