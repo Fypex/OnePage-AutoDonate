@@ -25,8 +25,17 @@ Flight::route('POST /pay/success', function(){
 });
 
 Flight::route('/success', function(){
-    Flight::render('success');
+    Flight::render('success' , array(
+    	'title' => settings()['site']['title'],
+      	'description' => settings()['site']['description'],
+      	'keywords' => settings()['site']['keywords'],
+    ));
 });
+
 Flight::route('/error', function(){
-    Flight::render('error');
+    Flight::render('error', array(
+    	'title' => settings()['site']['title'],
+      	'description' => settings()['site']['description'],
+      	'keywords' => settings()['site']['keywords'],
+    ));
 });
