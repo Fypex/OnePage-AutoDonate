@@ -1,5 +1,5 @@
 ### Demo
-  [http://ussmix.com/](http://autodonate.ussmix.com/)
+  [http://ussmix.com/](http://ussmix.com/)
   
 # OnePage AutoDonate
 ---
