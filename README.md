@@ -1,6 +1,4 @@
-### Demo
-  [http://ussmix.com/](http://ussmix.com/)
-  
+
 # OnePage AutoDonate
 ---
 # Installation!
