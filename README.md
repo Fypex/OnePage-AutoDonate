@@ -1,5 +1,5 @@
 
-# OnePage AutoDonate
+# OnePage AutoDonate - Auto Donate
 ---
 # Installation!
 
